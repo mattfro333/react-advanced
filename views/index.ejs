@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-
+    <title>React-Advanced</title>
+    <script type="text/javascript">
+      window.initialData = <%- JSON.stringify(initialData) -%>
+    </script>
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
@@ -18,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-<div id="root"><%- initialContent -%></div>
+<div id="root"><%- initialMarkup -%></div>
 <script src="/bundle.js" charset="utf-8"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
