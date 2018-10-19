@@ -50,6 +50,7 @@
     "enzyme-to-json": "^3.3.4",
     "express": "^4.16.3",
     "jest-cli": "^23.6.0",
+    "lodash.debounce": "^4.0.8",
     "pm2": "^3.2.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
