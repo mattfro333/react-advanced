@@ -14,9 +14,25 @@ const config = {
   },
   module: {
     rules: [
-      {test: /\.(jpe?g|png|gif|svg)$/i, exclude: /node_modules/, use: 'babel-loader?name=/lib/public/[name].[ext]'}
-    ]
-  }
+      {test: /\.js$/, exclude: /node_modules/, use: 'babel-loader'},
+
+
+  {
+                   test: /\.(png|jp(e*)g|gif|svg)$/,
+                   use: [
+                       {
+                           loader: 'url-loader',
+                           options: {
+                               limit: 8000,
+                               name: '[hash]-[name].[ext]',
+                               publicPath: 'images/'
+                           }
+                       }
+                   ]
+               },
+
+           ]
+       },
 };
 
 module.exports = config;
