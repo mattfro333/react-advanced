@@ -14,7 +14,7 @@ const config = {
   },
   module: {
     rules: [
-      {test: /\.js$/, exclude: /node_modules/, use: 'babel-loader'}
+      {test: /\.(jpe?g|png|gif|svg)$/i, exclude: /node_modules/, use: 'babel-loader?name=/lib/public/[name].[ext]'}
     ]
   }
 };
