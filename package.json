@@ -69,6 +69,7 @@
     "handlebars": "^4.7.2",
     "jest-cli": "^23.6.0",
     "js-yaml": "3.13.1",
+    "kind-of": "6.0.3",
     "lodash.debounce": "^4.0.8",
     "lodash.pickby": "^4.6.0",
     "merge": "^1.2.1",
